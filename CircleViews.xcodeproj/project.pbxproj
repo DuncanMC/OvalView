@@ -15,6 +15,7 @@
 		AE838F072803038F003B6CB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE838F052803038F003B6CB6 /* LaunchScreen.storyboard */; };
 		AE838F1228030390003B6CB6 /* CircleViewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE838F1128030390003B6CB6 /* CircleViewsTests.swift */; };
 		AE838F1D28030390003B6CB6 /* CircleViewsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE838F1C28030390003B6CB6 /* CircleViewsUITests.swift */; };
+		AE838F2E280304CC003B6CB6 /* OvalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE838F2D280304CC003B6CB6 /* OvalView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		AE838F1828030390003B6CB6 /* CircleViewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CircleViewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE838F1C28030390003B6CB6 /* CircleViewsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleViewsUITests.swift; sourceTree = "<group>"; };
 		AE838F1E28030390003B6CB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE838F2D280304CC003B6CB6 /* OvalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OvalView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				AE838EFA28030382003B6CB6 /* AppDelegate.swift */,
 				AE838EFC28030382003B6CB6 /* SceneDelegate.swift */,
 				AE838EFE28030382003B6CB6 /* ViewController.swift */,
+				AE838F2D280304CC003B6CB6 /* OvalView.swift */,
 				AE838F0028030382003B6CB6 /* Main.storyboard */,
 				AE838F032803038F003B6CB6 /* Assets.xcassets */,
 				AE838F052803038F003B6CB6 /* LaunchScreen.storyboard */,
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE838F2E280304CC003B6CB6 /* OvalView.swift in Sources */,
 				AE838EFF28030382003B6CB6 /* ViewController.swift in Sources */,
 				AE838EFB28030382003B6CB6 /* AppDelegate.swift in Sources */,
 				AE838EFD28030382003B6CB6 /* SceneDelegate.swift in Sources */,
