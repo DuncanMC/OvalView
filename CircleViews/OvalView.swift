@@ -21,6 +21,8 @@ import UIKit
 /// When the layer's bounds change, it updates the path in the shape layer to contain a rounded rectangle who's corner radius is 1/2 the shorter dimension of the view's bounds. If the view's bounds are a square, the shape will be a circle. If the view's bounds are rectangular, the shape will be a "lozenge"
 class OvalView: UIView {
 
+    /// A computed property that casts the view's backing layer to type CAShapeLayer for convenience.
+    var shapeLayer: CAShapeLayer { return self.layer as! CAShapeLayer }
 
     /// This is the color used to draw the oval. If you change it, the didSet will change the layer's strokeColor
     public var ovalColor: UIColor = .blue{
@@ -43,17 +45,15 @@ class OvalView: UIView {
 
     /// When we get added to a view, set up our shape layer's properties.
     override func didMoveToSuperview() {
-        guard let layer = self.layer as? CAShapeLayer else { return }
-        layer.strokeColor = ovalColor.cgColor
-        layer.fillColor = UIColor.clear.cgColor
-        layer.lineWidth = 1
+        shapeLayer.strokeColor = ovalColor.cgColor
+        shapeLayer.fillColor = UIColor.clear.cgColor
+        shapeLayer.lineWidth = 1
     }
 
     /// Build the path for our shape layer and install it.
     func createPath() {
         let cornerRaidus = min(bounds.height, bounds.width)
         let path = UIBezierPath(roundedRect: bounds, cornerRadius: cornerRaidus)
-        guard let layer = self.layer as? CAShapeLayer else { return }
-        layer.path = path.cgPath
+        shapeLayer.path = path.cgPath
     }
 }
