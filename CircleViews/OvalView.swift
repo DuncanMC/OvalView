@@ -1,5 +1,5 @@
 //
-//  CircleView.swift
+//  OvalView.swift
 //  CircleViews
 //
 //  Created by Duncan Champney on 4/10/22.
@@ -17,7 +17,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 import UIKit
 
 
-/// This class simply fills it's bounds with a rounded rectangle. As teh view's bounds change, it updates itself so the path fills the bounds.
+/// This class simply fills it's bounds with a rounded rectangle. As the view's bounds change, it updates itself so the path fills the bounds.
 /// When the layer's bounds change, it updates the path in the shape layer to contain a rounded rectangle who's corner radius is 1/2 the shorter dimension of the view's bounds. If the view's bounds are a square, the shape will be a circle. If the view's bounds are rectangular, the shape will be a "lozenge"
 class OvalView: UIView {
 

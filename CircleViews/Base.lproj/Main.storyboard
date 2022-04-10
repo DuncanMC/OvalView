@@ -23,7 +23,7 @@
                                         <rect key="frame" x="182" y="105" width="187" height="90"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I1C-PA-Jxt" customClass="OvalView" customModule="CircleViews" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I1C-PA-Jxt" userLabel="Circle View" customClass="OvalView" customModule="CircleViews" customModuleProvider="target">
                                         <rect key="frame" x="279" y="5" width="90" height="90"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
@@ -33,7 +33,6 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="0eO-mE-dKD"/>
                                     <constraint firstAttribute="trailing" secondItem="NTK-Ot-POj" secondAttribute="trailing" constant="5" id="8fl-nm-IVI"/>
                                     <constraint firstAttribute="trailing" secondItem="I1C-PA-Jxt" secondAttribute="trailing" constant="5" id="CHO-Pk-E8i"/>
                                     <constraint firstItem="NTK-Ot-POj" firstAttribute="height" secondItem="geZ-OX-btc" secondAttribute="height" multiplier="0.45" id="IuO-Md-WyW"/>
